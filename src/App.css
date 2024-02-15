@@ -30,31 +30,10 @@ html {
   z-index: 1000;
 }
 
-.split-view .map1 {
+.split-view .mapAndButton {
   width: 50%;
 }
-.split-view .map2 {
-  width: 50%;
-}
-button {
-  color: #646cff;
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+
 .map1 {
   width: 100%;
   height: 100vh;
@@ -64,4 +43,20 @@ button:focus-visible {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+.mapAndButton {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.mapsButtons {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  z-index: 100;
+}
+.hiddenDiv {
+  display: none;
 }
